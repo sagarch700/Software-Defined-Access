@@ -1,1 +1,19 @@
+underlay control plane --> any IGP, is-is is default
+mgmt plane --> DNAC
+control plane --> control plane node
+Data plane --> fabric edge node
+policy plane --> ISE
+LISP --> Control-plane overlay
+VXLAN --> DATA Plane overlay
+underlay switches --> any high bw switches
+FEN --> catalyst 3850, 9300, 9400
+Border edge node --> catalyst 3850, 9500, NX7700
+CP node --> catalyst 3850, 9500, NX7700
+
+physical layer: FEN, FBN, CPN, FWLC
+Network layer: LISP, VXLAN, CTS
+contorller layer: ISE, DNAC
+Management layer: DNAC GUI API
+
+
 
