@@ -1,1 +1,3 @@
-
+same svi gw on all FEN
+no fhrp needed
+no duplicate ip issues as they are local to fen
