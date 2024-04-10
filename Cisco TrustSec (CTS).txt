@@ -1,0 +1,9 @@
+responsible for security in SDA
+makes network segmentation using SGT
+helps in mirco segementation as in traffic segregation within same VN(virtual network) using SGT
+inter VN communication is achieved through Fusion router.
+by default clients in different VNID can't talk with each other
+in DNAC, Scalable Group tag(SGT)
+in ISE, Security Group tag(SGT) --> both are same
+SGT is configured on DNAC, but configured by ISE on devices.
+if VXLAN GPO (group based policy) bit is set to 1, the SGT is carried. if it's set to 0, SGT is not carried.
