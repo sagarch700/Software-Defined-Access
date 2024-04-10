@@ -23,6 +23,13 @@ Proxy router: border router which sites between LISP and non-LISP environment.
 Proxy router doesn't send MAP reg message to MS
 used as a default router when MS has no mappings for any given subnet.
 
+xTR in SDA becomes FEN
+MS/MR becomes the CPN
+PxTR becomes the Fabric border node
+EID is the ip address of the client
+RLOC is the loopback ip of FEN
+
+
 
 
 
