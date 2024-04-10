@@ -1,0 +1,11 @@
+VXLAN is the data plane of SDA since it can carry encapsulated L2 information.
+VXLAN Header is 8 bytes: VNI ID is 24 bit and SGT is 4 bit
+VNID is 24 bits
+VXLAN Destination port 4789
+in SDA VXLAN is used as Layer 2 tunneling
+
+VTEP is FEN
+VXLAN group policy option(VXLAN-GPO)
+VXLAN Scalabe group tag which is managed by cisco trustsec
+LISP is control-plane
+
