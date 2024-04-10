@@ -1,0 +1,39 @@
+Location identifier Seperation Protocol --> Mapping and encapsulation. mapping done by MS and RLOC routers. encapsulation is done by LISP routers.
+EID --> Endpoint IP
+RLOC Routing Locator --> connected to which router
+Map server --> every RLOC router sends their EID to RLOC mapping
+LISP is based on pull model. normal routing protocols are push model.
+
+Map server MS --> has the EID RLOC mapping
+Map Resolver MR --> shares this EID RLOC mapping to LISP routers
+can be on same or different device. 
+
+LISP Message Type.
+Map-register message: LISP Routers to MS to update the EID-RLOC mapping
+Map-notify message: MS to LISP Routers, ack of map register message.
+map-request message: LISP routers to MR to know about EID-RLOC mapping.
+Map-reply message: MR to LISP routers, as a response of map request message.
+negative-map reply message: MR to LISP routers, no entry for this EID.
+
+LISp source port random and destination port udp: 4341
+ingress tunnel router ITR: encapsulates ip packets
+egress tunnel router ETR: de-encapsulates LSIP encapsulated ip packets
+Tunel router xTR: bothe ITR and ETR
+Proxy router: border router which sites between LISP and non-LISP environment.
+Proxy router doesn't send MAP reg message to MS
+used as a default router when MS has no mappings for any given subnet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
