@@ -22,4 +22,20 @@ Fusion router and Border router can run ebgp/ibgp/igp
 VRF support. sub-interface support. SVI if it is a layer 3 switch. support igp, bgp, mp-bgp
 Should support VRF leaking.
 
+----------------------------Fabric WLC----------------------------------
+fabric enabled AP connect to FEN and use the underlay to establish CAPWAP tunnel with WLC. This tunnel also carries wireless host reachability information from the APs to WLC, which is in turn advertised to the fabric control plane node in the fabric.
+Models: catalyst 9800 wlc : 9800-40, 80, CL
+Wifi6 APS: catalyst 9115AX, 9117AX, 9120AX
+Wave 2 APS: Aironet 1800, 2800, 3800
+
+---------------------------------ISE----------------------------------------
+ISE provides identity services for SDA solution.
+ISE uses the concept of Cisco trustsec which applies SGTs on the traffic based on identity. These tags can be used to perfomr filtering using SGT-based access-lists.
+ISE integrates with DNAC using REST API and PXGRID is used for endpoint exchange
+ISE performs policy implementation, enabling dynamic mapping of users and devices to scalable groups and simplifying end-to-end security policy enforcement.
+DNAC pushes policies to ISE, enpoints are authenticated and authorised by ISE and as a part of an authorisation SGT is assigned to the endpoints.
+when DNAC and ISE are integrated. SGTs are copied from ISE to DNAC.
+after integration SGT configured in DNAC, but applied by ISE on the devices.
+
+
 
