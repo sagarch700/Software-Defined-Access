@@ -37,5 +37,13 @@ DNAC pushes policies to ISE, enpoints are authenticated and authorised by ISE an
 when DNAC and ISE are integrated. SGTs are copied from ISE to DNAC.
 after integration SGT configured in DNAC, but applied by ISE on the devices.
 
+---------------------------Fabric in a Box-----------------------
+FBN FEN and CPN all running on the same fabric node.
+can be a single switch, stack switch, stackwise virtual.
+
+------------------------Intermediate node------------------------------
+devices inside the underlay
+
+
 
 
