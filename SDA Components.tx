@@ -1,0 +1,25 @@
+----------------------------FBN-----------------------------------------------------------------------
+Serves as a gateway b/w SD-ACCESS fabric site and the networks external to fabric
+responsible for network virtualisation interworking and SGT propogation from the fabric to the rest of the network
+Equivalent to PXTR in LISP
+known border router(internal border node):- known subnets liks mpls/dc/etc.
+unknown border router(external border node):- unknown subnets (default route 0.0.0.0/0).
+Hybrid Border node(Anywhere border node):- Known border + unknown border.
+
+-------------------FBN---------------------------------------
+FBN advertise the endpoint prefixes to outside the fabric.
+gateway of last resort for FEN
+
+-----------------------CP Node-----------------------------------------
+CP Node is equivalent to LISP Map-server and Map-resolver
+maintains EID to RLOC Mappings
+
+-----------------------Fusion Router------------------------------------------
+Fusion router access of shared services for the endpoints in fabric: dhcp, ntp. snmp, dns, DNAC, ISE, etc.
+not managed by DNAC as they are not part of SDA fabric
+facilitates inter-VN communication
+Fusion router and Border router can run ebgp/ibgp/igp
+VRF support. sub-interface support. SVI if it is a layer 3 switch. support igp, bgp, mp-bgp
+Should support VRF leaking.
+
+
