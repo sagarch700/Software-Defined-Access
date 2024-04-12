@@ -1,0 +1,6 @@
+L2 Border Handoff is used while migration
+single logical border node connected to traditional network: can be stacked to make it appear a single logical device
+SVIs should be on L2 Border handoff SDA node
+Reserved Vlans: 1, 1002-1005, 2045-2047, 3000-3500
+so take into consideration of above vlans when you plan for migration
+
